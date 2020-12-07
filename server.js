@@ -23,10 +23,10 @@ if (!process.env.DISABLE_XORIGIN) {
     next();
   });
 }
+/*
 
 app.use(express.static(__dirname + '/public'));
 app.use('/public', express.static(__dirname + '/public'));
-/*
 app.route('/_api/package.json')
   .get(function(req, res, next) {
     console.log('requested');
@@ -60,10 +60,10 @@ app.use(function(err, req, res, next) {
 app.get("/",function(req, res) {
   res.send("Hello Express");
 })
-*/
+
 app.get("/",function(req, res) {
   res.sendFile(__dirname + "/views/index.html");
-})
+})*/
 var port = process.env.PORT || 3000;
 bGround.setupBackgroundApp(app, myApp, __dirname).listen(port, function(){
   bGround.log('Node is listening on port '+ port + '...')
