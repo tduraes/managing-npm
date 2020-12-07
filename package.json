@@ -1,12 +1,17 @@
 {
 	"author": "Tiago Durães",
 	"description": "this is just an example",
-	"keywords": ["freecodecamp","myfirst","example","tiagoduraes"],
+	"keywords": [
+		"freecodecamp",
+		"myfirst",
+		"example",
+		"tiagoduraes"
+	],
 	"name": "fcc-learn-npm-package-json",
 	"license": "MIT",
 	"version": "1.0.2",
 	"dependencies": {
-		"moment": "2.10.2",
+		"moment": "~2.10.2",
 		"express": "^4.14.0"
 	},
 	"main": "server.js",
